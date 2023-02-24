@@ -22,5 +22,6 @@ def brain_gcd():
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
         return False
 
+
 if __name__ == '__main__':
     main()
