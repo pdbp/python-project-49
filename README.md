@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-https://asciinema.org/connect/046249fb-d638-47be-a4ac-b4ed8fc521aa
+https://asciinema.org/a/BfY3Mi6QAnNV6hZXc7QIGaYUS
 
 [![Actions Status](https://github.com/pdbp/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pdbp/python-project-49/actions)
 
