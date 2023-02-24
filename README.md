@@ -1,5 +1,8 @@
-### Hexlet tests and linter status:
+### Asciinema:
+
 https://asciinema.org/a/BfY3Mi6QAnNV6hZXc7QIGaYUS
+
+### Hexlet tests and linter status:
 
 [![Actions Status](https://github.com/pdbp/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/pdbp/python-project-49/actions)
 
