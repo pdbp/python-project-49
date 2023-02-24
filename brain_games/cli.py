@@ -8,6 +8,8 @@ def welcome_user(game):
         print('What is the result of the expression?')
     elif game == 'brain-even':
         print('Answer "yes" if the number is even, otherwise answer "no".')
+    elif game == 'brain-gcd':
+        print('Find the greatest common divisor of given numbers.')
     return name
 
 
