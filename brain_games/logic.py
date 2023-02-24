@@ -1,6 +1,7 @@
 from . import cli
 from .scripts import brain_calc
 from .scripts import brain_even
+from .scripts import brain_gcd
 
 
 def main(game):
@@ -23,3 +24,5 @@ def answer(game):
         return brain_calc.calc()
     elif game == 'brain-even':
         return brain_even.even()
+    elif game == 'brain-gcd':
+        return brain_gcd.brain_gcd()
