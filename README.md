@@ -1,6 +1,7 @@
-### Asciinema:
+### Demonstrations:
 
-https://asciinema.org/a/BfY3Mi6QAnNV6hZXc7QIGaYUS
+brain-even: https://asciinema.org/a/BfY3Mi6QAnNV6hZXc7QIGaYUS
+brain-calc: https://asciinema.org/a/abszUwE5UONEAGYH9oyPpTBXx
 
 ### Hexlet tests and linter status:
 
