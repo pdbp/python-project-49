@@ -5,29 +5,38 @@ from .. import cli
 
 def main():
     print("Welcome to the Brain Games!")
-    cli.welcome_user()
-    print ('Answer "yes" if the number is even, otherwise answer "no".')
+    name = cli.welcome_user()
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers = 0
     working = True
     while working:
-        if even():
-            correct_answers +=1
-            cli.correct()
+        answer = even()
+        if answer:
+            correct_answers += 1
+            if correct_answers == 3:
+                print(f"Congratulations, {name}!")
+                working = False
         else:
             correct_answers = 0
-            cli.wrong()
+            print(f"Let's try again, {name}!")
+            working = False
+
 
 def even():
-    number = randint (1, 100)
-
+    number = randint(1, 100)
     if (number % 2) == 0:
         correct_answer = 'yes'
-    else: correct_answer = 'no'
-
-    if cli.even(number) == correct_answer:
+    else:
+        correct_answer = 'no'
+    answer = cli.even(number)
+    if answer == correct_answer:
+        print('Correct!')
         return True
     else:
+        print(f'''
+'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.''')
         return False
+
 
 if __name__ == '__main__':
     main()
