@@ -10,9 +10,12 @@ def welcome_user(game):
         print('Answer "yes" if the number is even, otherwise answer "no".')
     elif game == 'brain-gcd':
         print('Find the greatest common divisor of given numbers.')
+    elif game == 'brain-progression':
+        print('What number is missing in the progression?')
     return name
 
 
 def question(question):
-    answer = prompt.string(f'Qestion: {question} ')
+    print(f'Qestion: {question} ')
+    answer = prompt.string('Your answer: ')
     return answer
