@@ -1,9 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "The project contains a set of games that develop logical and mathematical thinking."
 authors = ["denis ekimenko <den.pdb@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/pdbp/python-project-49"
+classifiers = [
+    "Development Status :: 3 - Alpha"
+    "Environment :: Console"
+    "Intended Audience :: Education"
+    "Natural Language :: English"
+    "Programming Language :: Python :: 3.10"
+    "Topic :: Education"
+]
 packages = [{ include = "brain_games" },
 #	{include = "hexlet_code"}
 ]
@@ -22,9 +31,7 @@ asciinema = "^2.2.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
