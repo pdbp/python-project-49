@@ -4,6 +4,7 @@ brain-even: https://asciinema.org/a/BfY3Mi6QAnNV6hZXc7QIGaYUS
 brain-calc: https://asciinema.org/a/abszUwE5UONEAGYH9oyPpTBXx  
 brain-gcd: https://asciinema.org/a/ripq1zQ1nxkx4GcXCa7Q2ZpUz  
 brain-progression: https://asciinema.org/a/Z3Oa7GfchoK2I7uXk0e9K2Dlu  
+brain-prime: https://asciinema.org/a/or2BC2Mrr9xzNiYwynCwIsuC7  
 
 ### Hexlet tests and linter status:
 
