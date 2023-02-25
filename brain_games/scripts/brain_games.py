@@ -4,7 +4,7 @@ from .. import cli
 
 def main():
     print("Welcome to the Brain Games!")
-    cli.welcome_user()
+    cli.welcome_user('brain-games')
 
 
 if __name__ == '__main__':
