@@ -3,6 +3,7 @@ from .scripts import brain_calc
 from .scripts import brain_even
 from .scripts import brain_gcd
 from .scripts import brain_progression
+from .scripts import brain_prime
 
 
 def main(game):
@@ -29,3 +30,5 @@ def answer(game):
         return brain_gcd.brain_gcd()
     elif game == 'brain-progression':
         return brain_progression.progression()
+    elif game == 'brain-prime':
+        return brain_prime.prime()
