@@ -6,11 +6,11 @@ authors = ["denis ekimenko <den.pdb@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/pdbp/python-project-49"
 classifiers = [
-    "Development Status :: 3 - Alpha"
-    "Environment :: Console"
-    "Intended Audience :: Education"
-    "Natural Language :: English"
-    "Programming Language :: Python :: 3.10"
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
     "Topic :: Education"
 ]
 packages = [{ include = "brain_games" },
