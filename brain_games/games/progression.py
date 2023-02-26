@@ -15,9 +15,7 @@ def game():
     r_answ = str(expression[missing_index])
     expression_miss = expression
     expression_miss[missing_index] = '..'
-    rep_char = ",[]'"
-    new_char = "    "
-    rep_table = str.maketrans(rep_char, new_char)
+    rep_table = str.maketrans('', '', ",[]'")
     question = str(expression_miss).translate(rep_table)
     answ = cli.question(question)
     if answ == r_answ:
