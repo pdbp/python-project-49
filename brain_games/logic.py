@@ -23,12 +23,13 @@ def main(game):
 
 def answer(game):
     if game == 'brain-calc':
-        return calc.game()
+        result = calc.game()
     elif game == 'brain-even':
-        return even.game()
+        result = even.game()
     elif game == 'brain-gcd':
-        return gcd.game()
+        result = gcd.game()
     elif game == 'brain-progression':
-        return progression.game()
+        result = progression.game()
     elif game == 'brain-prime':
-        return prime.game()
+        result = prime.game()
+    return result
