@@ -6,12 +6,12 @@ from .. import cli
 def game():
     number1 = randint(1, 100)
     number2 = randint(1, 100)
-    correct_answer = str(gcd(number1, number2))
+    r_answ = str(gcd(number1, number2))
     question = str(number1) + ' ' + str(number2)
-    answer = cli.question(question)
-    if answer == correct_answer:
+    answ = cli.question(question)
+    if answ == r_answ:
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
         return False

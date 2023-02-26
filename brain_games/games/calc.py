@@ -2,6 +2,7 @@ from random import randint
 from random import choice
 from .. import cli
 
+
 def game():
     number1 = randint(1, 25)
     number2 = randint(1, 25)
@@ -9,15 +10,15 @@ def game():
     sign = choice(seqence)
     expression = str(number1) + ' ' + choice(sign) + ' ' + str(number2)
     if sign == '+':
-        correct_answer = str(number1 + number2)
+        r_answ = str(number1 + number2)
     elif sign == '-':
-        correct_answer = str(number1 - number2)
+        r_answ = str(number1 - number2)
     else:
-        correct_answer = str(number1 * number2)
-    answer = cli.question(expression)
-    if answer == correct_answer:
+        r_answ = str(number1 * number2)
+    answ = cli.question(expression)
+    if answ == r_answ:
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
         return False

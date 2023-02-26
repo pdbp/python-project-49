@@ -12,14 +12,18 @@ def game():
     while start_number + (i * step) <= stop_number:
         expression.append(start_number + step * i)
         i += 1
-    correct_answer = str(expression[missing_index])
+    r_answ = str(expression[missing_index])
     expression_miss = expression
     expression_miss[missing_index] = '..'
-    question = str(expression_miss).replace(',', '').replace('[', '').replace(']', '').replace("'", "")
-    answer = cli.question(question)
-    if answer == correct_answer:
+    rep_char = ",[]'"
+    new_char = "    "
+    rep_table = str.maketrans(rep_char, new_char)
+    question = str(expression_miss).translate(rep_table)
+    print(question)
+    answ = cli.question(question)
+    if answ == r_answ:
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
         return False

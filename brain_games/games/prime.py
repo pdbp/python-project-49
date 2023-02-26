@@ -4,18 +4,18 @@ from .. import cli
 
 def game():
     number = randint(1, 100)
-    correct_answer = 'yes'
+    r_answ = 'yes'
     if number > 1:
         for num in range(2, number):
             if number % num == 0:
-                correct_answer = 'no'
+                r_answ = 'no'
                 break
     else:
-        correct_answer = 'no'
-    answer = cli.question(number)
-    if answer == correct_answer:
+        r_answ = 'no'
+    answ = cli.question(number)
+    if answ == r_answ:
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
         return False
