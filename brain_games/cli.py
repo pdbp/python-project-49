@@ -18,6 +18,6 @@ def welcome_user(game):
 
 
 def question(question):
-    print(f'Qestion: {question} ')
+    print(f'Question: {question} ')
     answer = prompt.string('Your answer: ')
     return answer
