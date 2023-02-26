@@ -1,9 +1,9 @@
 from . import cli
-from .scripts import brain_calc
-from .scripts import brain_even
-from .scripts import brain_gcd
-from .scripts import brain_progression
-from .scripts import brain_prime
+from .games import calc
+from .games import even
+from .games import gcd
+from .games import progression
+from .games import prime
 
 
 def main(game):
@@ -23,12 +23,12 @@ def main(game):
 
 def answer(game):
     if game == 'brain-calc':
-        return brain_calc.calc()
+        return calc.game()
     elif game == 'brain-even':
-        return brain_even.even()
+        return even.game()
     elif game == 'brain-gcd':
-        return brain_gcd.brain_gcd()
+        return gcd.game()
     elif game == 'brain-progression':
-        return brain_progression.progression()
+        return progression.game()
     elif game == 'brain-prime':
-        return brain_prime.prime()
+        return prime.game()
