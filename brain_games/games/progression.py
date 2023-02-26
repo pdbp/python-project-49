@@ -19,7 +19,6 @@ def game():
     new_char = "    "
     rep_table = str.maketrans(rep_char, new_char)
     question = str(expression_miss).translate(rep_table)
-    print(question)
     answ = cli.question(question)
     if answ == r_answ:
         print('Correct!')
