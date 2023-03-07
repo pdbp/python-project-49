@@ -1,17 +1,10 @@
 from random import randint
-from .. import cli
 
 
 def game():
     number = randint(1, 100)
     r_answ = is_prime(number)
-    answ = cli.question(number)
-    if answ == r_answ:
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
-        return False
+    return number, r_answ
 
 
 def is_prime(number):
@@ -21,3 +14,7 @@ def is_prime(number):
                 return 'no'
         return 'yes'
     return 'no'
+
+
+def rules():
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'

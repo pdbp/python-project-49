@@ -1,5 +1,4 @@
 from random import randint
-from .. import cli
 
 
 def game():
@@ -8,10 +7,8 @@ def game():
         r_answ = 'yes'
     else:
         r_answ = 'no'
-    answ = cli.question(number)
-    if answ == r_answ:
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
-        return False
+    return number, r_answ
+
+
+def rules():
+    return 'Answer "yes" if the number is even, otherwise answer "no".'

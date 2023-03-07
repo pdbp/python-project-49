@@ -1,5 +1,4 @@
 from random import randint
-from .. import cli
 
 
 def game():
@@ -7,20 +6,27 @@ def game():
     step = randint(1, 5)
     stop_number = start_number + 9 * step
     missing_index = randint(0, 9)
+    expression = create_expression(start_number, step, stop_number)
+    question = create_question(expression, missing_index)
+    r_answ = str(expression[missing_index])
+    return question, r_answ
+
+
+def create_expression(start_number, step, stop_number):
     expression = []
     i = 0
     while start_number + (i * step) <= stop_number:
         expression.append(start_number + step * i)
         i += 1
-    r_answ = str(expression[missing_index])
-    expression_miss = expression
+    return expression
+
+
+def create_question(expression, missing_index):
+    expression_miss = list(expression)
     expression_miss[missing_index] = '..'
     rep_table = str.maketrans('', '', ",[]'")
-    question = str(expression_miss).translate(rep_table)
-    answ = cli.question(question)
-    if answ == r_answ:
-        print('Correct!')
-        return True
-    else:
-        print(f"'{answ}' is wrong answer ;(. Correct answer was '{r_answ}'.")
-        return False
+    return str(expression_miss).translate(rep_table)
+
+
+def rules():
+    return 'What number is missing in the progression?'

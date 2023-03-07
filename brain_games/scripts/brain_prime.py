@@ -1,9 +1,10 @@
 #!usr/bin/env python3
 from .. import logic
+from ..games import prime
 
 
 def main():
-    logic.main('brain-prime')
+    logic.main(prime)
 
 
 if __name__ == '__main__':
