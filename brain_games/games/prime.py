@@ -8,12 +8,12 @@ def game():
 
 
 def is_prime(number):
-    if number > 1:
-        for num in range(2, number):
-            if number % num == 0:
-                return 'no'
-        return 'yes'
-    return 'no'
+    if number <= 1:
+        return 'no'
+    for num in range(2, number):
+        if number % num == 0:
+            return 'no'
+    return 'yes'
 
 
 def rules():
