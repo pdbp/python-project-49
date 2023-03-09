@@ -2,7 +2,9 @@ from random import randint
 
 
 def game():
-    number = randint(1, 100)
+    START_RAND_NUMB_RANGE = 1
+    END_RAND_NUMB_RANGE = 100
+    number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     r_answ = is_prime(number)
     return number, r_answ
 

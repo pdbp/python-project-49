@@ -4,9 +4,10 @@ from . import cli
 def main(game):
     print("Welcome to the Brain Games!")
     name = cli.welcome_user()
+    CORRECT_ANSWERS_TO_WIN = 3
     print(game.rules())
     score = 0
-    while score < 3:
+    while score < CORRECT_ANSWERS_TO_WIN:
         question, r_ans = game.game()
         ans = cli.question(question)
         if ans == r_ans:
