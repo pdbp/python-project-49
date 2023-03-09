@@ -1,4 +1,5 @@
 from random import randint
+RULES = 'What number is missing in the progression?'
 
 
 def game():
@@ -33,7 +34,3 @@ def create_question(expression, missing_index):
     expression_miss[missing_index] = '..'
     rep_table = str.maketrans('', '', ",[]'")
     return str(expression_miss).translate(rep_table)
-
-
-def rules():
-    return 'What number is missing in the progression?'

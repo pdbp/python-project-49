@@ -1,5 +1,6 @@
 from random import randint
 from math import gcd
+RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def game():
@@ -10,7 +11,3 @@ def game():
     r_answ = str(gcd(number1, number2))
     question = f'{str(number1)} {str(number2)}'
     return question, r_answ
-
-
-def rules():
-    return 'Find the greatest common divisor of given numbers.'

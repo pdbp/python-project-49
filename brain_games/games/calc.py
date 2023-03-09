@@ -1,5 +1,6 @@
 from random import randint
 from random import choice
+RULES = 'What is the result of the expression?'
 
 
 def game():
@@ -22,7 +23,3 @@ def get_right_answer(number1, number2, sign):
     else:
         r_answ = str(number1 * number2)
     return r_answ
-
-
-def rules():
-    return 'What is the result of the expression?'
