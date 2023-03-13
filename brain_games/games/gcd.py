@@ -9,5 +9,5 @@ def game():
     number1 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     number2 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     r_answ = str(gcd(number1, number2))
-    question = f'{str(number1)} {str(number2)}'
+    question = f'{number1} {number2}'
     return question, r_answ

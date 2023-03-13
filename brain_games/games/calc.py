@@ -10,7 +10,7 @@ def game():
     number1 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     number2 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     sign = choice(RAND_SIGNS_RANGE)
-    expression = f'{str(number1)} {choice(sign)} {str(number2)}'
+    expression = f'{number1} {choice(sign)} {number2}'
     r_answ = get_right_answer(number1, number2, sign)
     return expression, r_answ
 
