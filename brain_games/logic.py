@@ -1,11 +1,11 @@
 import prompt
+CORRECT_ANSWERS_TO_WIN = 3
 
 
 def main(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    CORRECT_ANSWERS_TO_WIN = 3
     print(game.RULES)
     score = 0
     while score < CORRECT_ANSWERS_TO_WIN:

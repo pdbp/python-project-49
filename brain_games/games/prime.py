@@ -1,10 +1,10 @@
 from random import randint
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+START_RAND_NUMB_RANGE = 1
+END_RAND_NUMB_RANGE = 100
 
 
 def game():
-    START_RAND_NUMB_RANGE = 1
-    END_RAND_NUMB_RANGE = 100
     number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     answer_converter = {True: 'yes', False: 'no'}
     r_answ = answer_converter[is_prime(number)]
