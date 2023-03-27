@@ -4,7 +4,7 @@ from ..games import progression
 
 
 def main():
-    logic.main(progression)
+    logic.run_engine(progression)
 
 
 if __name__ == '__main__':

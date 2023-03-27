@@ -2,7 +2,7 @@ import prompt
 CORRECT_ANSWERS_TO_WIN = 3
 
 
-def main(game):
+def run_engine(game):
     print("Welcome to the Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')

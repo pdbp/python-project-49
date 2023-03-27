@@ -4,7 +4,7 @@ from ..games import prime
 
 
 def main():
-    logic.main(prime)
+    logic.run_engine(prime)
 
 
 if __name__ == '__main__':

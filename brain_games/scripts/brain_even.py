@@ -4,7 +4,7 @@ from ..games import even
 
 
 def main():
-    logic.main(even)
+    logic.run_engine(even)
 
 
 if __name__ == '__main__':

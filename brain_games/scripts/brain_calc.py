@@ -4,7 +4,7 @@ from ..games import calc
 
 
 def main():
-    logic.main(calc)
+    logic.run_engine(calc)
 
 
 if __name__ == '__main__':

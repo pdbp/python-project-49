@@ -4,7 +4,7 @@ from ..games import gcd
 
 
 def main():
-    logic.main(gcd)
+    logic.run_engine(gcd)
 
 
 if __name__ == '__main__':
