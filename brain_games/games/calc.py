@@ -6,7 +6,7 @@ END_RAND_NUMB_RANGE = 25
 RAND_SIGNS_RANGE = ('+', '-', '*')
 
 
-def game():
+def run_game():
     number1 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     number2 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     sign = choice(RAND_SIGNS_RANGE)

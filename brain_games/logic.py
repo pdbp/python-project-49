@@ -9,7 +9,7 @@ def run_engine(game):
     print(game.RULES)
     score = 0
     while score < CORRECT_ANSWERS_TO_WIN:
-        question, right_answer = game.game()
+        question, right_answer = game.run_game()
         print(f'Question: {question} ')
         answer = prompt.string('Your answer: ')
         if answer == right_answer:

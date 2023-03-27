@@ -4,7 +4,7 @@ START_RAND_NUMB_RANGE = 1
 END_RAND_NUMB_RANGE = 100
 
 
-def game():
+def run_game():
     number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     answer_converter = {True: 'yes', False: 'no'}
     right_answer = answer_converter[is_even(number)]

@@ -9,7 +9,7 @@ START_RAND_MISS_IND_RANGE = 0
 STOP_RAND_MISS_IND_RANGE = 5
 
 
-def game():
+def run_game():
     start_number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     step = randint(START_RAND_STEP_RANGE, END_RAND_STEP_RANGE)
     stop_number = start_number + (AMOUNT_OF_NUMB_IN_PROGRESSION - 1) * step

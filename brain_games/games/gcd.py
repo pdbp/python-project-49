@@ -5,7 +5,7 @@ START_RAND_NUMB_RANGE = 1
 END_RAND_NUMB_RANGE = 100
 
 
-def game():
+def run_game():
     number1 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     number2 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     right_answer = str(gcd(number1, number2))
