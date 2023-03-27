@@ -6,14 +6,6 @@ END_RAND_NUMB_RANGE = 100
 
 def run_game():
     number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
-    answer_converter = {True: 'yes', False: 'no'}
-    right_answer = answer_converter[is_even(number)]
+    right_answer = 'yes' if number % 2 == 0 else 'no'
+    print(right_answer)
     return number, right_answer
-
-
-def is_even(number):
-    if (number % 2) == 0:
-        right_answer = True
-    else:
-        right_answer = False
-    return right_answer
