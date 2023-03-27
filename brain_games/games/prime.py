@@ -7,8 +7,8 @@ END_RAND_NUMB_RANGE = 100
 def game():
     number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     answer_converter = {True: 'yes', False: 'no'}
-    r_answ = answer_converter[is_prime(number)]
-    return number, r_answ
+    right_answer = answer_converter[is_prime(number)]
+    return number, right_answer
 
 
 def is_prime(number):

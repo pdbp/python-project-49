@@ -16,8 +16,8 @@ def game():
     missing_index = randint(START_RAND_MISS_IND_RANGE, STOP_RAND_MISS_IND_RANGE)
     expression = create_expression(start_number, step, stop_number)
     question = create_question(expression, missing_index)
-    r_answ = str(expression[missing_index])
-    return question, r_answ
+    right_answer = str(expression[missing_index])
+    return question, right_answer
 
 
 def create_expression(start_number, step, stop_number):

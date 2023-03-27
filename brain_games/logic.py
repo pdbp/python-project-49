@@ -9,14 +9,18 @@ def run_engine(game):
     print(game.RULES)
     score = 0
     while score < CORRECT_ANSWERS_TO_WIN:
-        question, r_ans = game.game()
+        question, right_answer = game.game()
         print(f'Question: {question} ')
-        ans = prompt.string('Your answer: ')
-        if ans == r_ans:
+        answer = prompt.string('Your answer: ')
+        if answer == right_answer:
             print('Correct!')
             score += 1
         else:
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{r_ans}'.")
-            print(f"Let's try again, {name}!")
+            report_loss(name, answer, right_answer)
             return 0
     print(f"Congratulations, {name}!")
+
+
+def report_loss(name, reply, right_reply):
+    print(f"'{reply}' is wrong answer ;(. Correct answer was '{right_reply}'.")
+    print(f"Let's try again, {name}!")

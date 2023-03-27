@@ -7,13 +7,13 @@ END_RAND_NUMB_RANGE = 100
 def game():
     number = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     answer_converter = {True: 'yes', False: 'no'}
-    r_answ = answer_converter[is_even(number)]
-    return number, r_answ
+    right_answer = answer_converter[is_even(number)]
+    return number, right_answer
 
 
 def is_even(number):
     if (number % 2) == 0:
-        r_answ = True
+        right_answer = True
     else:
-        r_answ = False
-    return r_answ
+        right_answer = False
+    return right_answer

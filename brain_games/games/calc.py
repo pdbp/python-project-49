@@ -11,15 +11,15 @@ def game():
     number2 = randint(START_RAND_NUMB_RANGE, END_RAND_NUMB_RANGE)
     sign = choice(RAND_SIGNS_RANGE)
     expression = f'{number1} {choice(sign)} {number2}'
-    r_answ = get_right_answer(number1, number2, sign)
-    return expression, r_answ
+    right_answer = get_right_answer(number1, number2, sign)
+    return expression, right_answer
 
 
 def get_right_answer(number1, number2, sign):
     if sign == '+':
-        r_answ = str(number1 + number2)
+        right_answer = str(number1 + number2)
     elif sign == '-':
-        r_answ = str(number1 - number2)
+        right_answer = str(number1 - number2)
     else:
-        r_answ = str(number1 * number2)
-    return r_answ
+        right_answer = str(number1 * number2)
+    return right_answer
